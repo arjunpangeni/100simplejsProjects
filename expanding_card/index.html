@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="panel active"
+            style="background-image: url(
+                https://plus.unsplash.com/premium_photo-1661885113156-9932782b9a72?q=80&w=386&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+            <h3>mountain</h3>
+        </div>
+        <div class="panel"
+            style="background-image:url(
+                https://media.nepaltrekadventures.com/uploads/media/Top%2010%20Beautiful%20Lakes%20in%20Nepal/rara-lake.jpg) ">
+            <h3>Rara Lake</h3>
+        </div>
+        <div class="panel"
+            style="background-image:url(
+                https://media.nepaltrekadventures.com/uploads/media/Top%2010%20Beautiful%20Lakes%20in%20Nepal/phewa-lake.jpg) ">
+            <h3>Fewa lake</h3>
+        </div>
+        <div class="panel"
+            style="background-image:url(
+                https://media.nepaltrekadventures.com/uploads/media/Top%2010%20Beautiful%20Lakes%20in%20Nepal/shey-poksundo-lake.jpg) ">
+            <h3>shey-poksundo</h3>
+        </div>
+        <div class="panel"
+            style="background-image:url(
+            https://media.nepaltrekadventures.com/uploads/media/Top%2010%20Beautiful%20Lakes%20in%20Nepal/gosaikunda-lake.jpg) ">
+            <h3>gosaikunda</h3>
+        </div>
+
+    </div>
+    <script>
+        const panels = document.querySelectorAll('.panel')
+        panels.forEach(panel => {
+            panel.addEventListener('click', () => {
+                removeActiveClasses()
+                panel.classList.add('active')
+
+            })
+        })
+        function removeActiveClasses() {
+            panels.forEach((panel) => {
+                panel.classList.remove('active')
+            })
+        }
+    </script>
+</body>
+
+</html>
