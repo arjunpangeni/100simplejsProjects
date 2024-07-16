@@ -29,14 +29,14 @@ body {
   -o-border-radius: 50px;
   color: #fff;
   cursor: pointer;
-  flex: 0.5;
+  flex: 5;
   margin: 10px;
   position: relative;
-  transition: flex 0.7s ease-in;
-  -webkit-transition: flex 0.7s ease-in;
-  -moz-transition: flex 0.7s ease-in;
-  -ms-transition: flex 0.7s ease-in;
-  -o-transition: flex 0.7s ease-in;
+  transition: flex 0.3s ease-in;
+  -webkit-transition: flex 0.3s ease-in;
+  -moz-transition: flex 0.3s ease-in;
+  -ms-transition: flex 0.3s ease-in;
+  -o-transition: flex 0.3s ease-in;
 }
 .panel h3 {
   font-size: 24px;
@@ -47,7 +47,7 @@ body {
   opacity: 0;
 }
 .panel.active {
-  flex: 5;
+  flex: 25;
 }
 
 .panel.active h3 {
